@@ -1,0 +1,18 @@
+---
+import Layout from "../pages/Layout.astro";
+import CorporateHero from "../components/CorporateHero.jsx";
+import Navbar from "../components/Navbar.jsx";
+import CorporateSections from "../components/CorporateSections.jsx";
+import Footer from "../components/Footer.astro";
+import Services from "../components/Services.jsx";
+import Contacto from "../components/Contacto.jsx";
+---
+
+<Layout>
+  <Navbar client:visible />
+  <CorporateHero client:visible />
+  <CorporateSections client:visible />
+  <Services client:load />
+  <Contacto client:load />
+  <Footer />
+</Layout>

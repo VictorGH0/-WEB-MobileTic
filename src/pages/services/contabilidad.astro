@@ -1,0 +1,272 @@
+---
+import Layout from "../../pages/Layout.astro";
+import Navbar from "../../components/Navbar.jsx";
+import Footer from "../../components/Footer.astro";
+
+import {
+    Droplets,
+    Printer,
+    WifiOff,
+    BarChart3,
+    ShieldCheck,
+    Database,
+    ArrowRight,
+    ClipboardPlus,
+    ShieldOff,
+    UserStar,
+    Globe,
+    Check,
+    CircleDollarSign,
+} from "lucide-react";
+---
+
+<Layout>
+    <!-- SECCIÓN 1 -->
+    <section id="plataforma" class="bg-white
+      py-32
+      px-6">
+        <div
+            class="max-w-7xl
+      mx-auto
+      grid
+      lg:grid-cols-2
+      gap-24
+      items-center"
+        >
+            <!-- Mockup -->
+            <div class="relative">
+                <div
+                    class="absolute
+          inset-0
+          bg-cyan-500/10
+          blur-3xl
+          rounded-full"
+                >
+                </div>
+
+                <div
+                    class="relative
+          rounded-[2rem]
+          border
+          border-slate-200
+          bg-slate-50
+          overflow-hidden
+          shadow-2xl"
+                >
+                    <!-- Content -->
+                    <!-- VISUAL PREMIUM -->
+                    <div class="relative">
+                        <!-- Glow -->
+                        <div
+                            class="absolute
+      -inset-10
+      bg-cyan-500/20
+      blur-3xl
+      rounded-full"
+                        >
+                        </div>
+
+                        <!-- Imagen principal -->
+                        <div
+                            class="relative
+      rounded-[2.5rem]
+      overflow-hidden
+      border
+      border-white/10
+      shadow-[0_40px_120px_-20px_rgba(0,0,0,0.45)]
+      bg-white
+      rotate-[-2deg]
+      hover:rotate-0
+      transition-all
+      duration-700"
+                        >
+                            <!-- Barra superior -->
+                            <div
+                                class="h-14
+        bg-slate-950
+        flex
+        items-center
+        px-6
+        gap-3"
+                            >
+                                <div class="w-3 h-3 rounded-full bg-red-400">
+                                </div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400">
+                                </div>
+                                <div class="w-3 h-3 rounded-full bg-green-400">
+                                </div>
+                            </div>
+
+                            <!-- Imagen -->
+                            <img
+                                src="/contabook_1.jpeg"
+                                alt="Sistema de facturación"
+                                class="w-full
+        h-full
+        object-cover"
+                            />
+
+                            <!-- Overlay elegante -->
+                            <div
+                                class="absolute
+        inset-0
+        bg-gradient-to-t
+        from-slate-950/30
+        via-transparent
+        to-transparent"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Texto -->
+            <div>
+                <h2
+                    class="text-5xl
+          md:text-6xl
+          font-semibold
+          text-slate-900
+          leading-tight
+          mb-8"
+                >
+                    El control financiero en un solo lugar
+                </h2>
+
+                <p
+                    class="text-xl
+          text-slate-600
+          leading-relaxed
+          mb-10"
+                >
+                    Administra toda la información contable de manera rápida,
+                    organizada y segura. Genera reportes, controla recaudos y
+                    supervisa cada movimiento financiero con herramientas
+                    diseñadas para optimizar tu operación.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex
+            items-start
+            gap-5">
+                        <div
+                            class="w-14
+              h-14
+              rounded-2xl
+              bg-cyan-100
+              flex
+              items-center
+              justify-center
+              shrink-0"
+                        >
+                            <Globe size={28} className="text-cyan-700" />
+                        </div>
+
+                        <div>
+                            <h3
+                                class="text-2xl
+                font-medium
+                text-slate-900
+                mb-2"
+                            >
+                                De la Gestión Manual a la Eficiencia Digital
+                            </h3>
+
+                            <p
+                                class="text-xl
+          text-slate-600
+          leading-relaxed
+          mb-10"
+                            >
+                                Transforma los procesos lentos y propensos a
+                                errores en un flujo de trabajo ágil y preciso.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex
+            items-start
+            gap-5">
+                        <div
+                            class="w-14
+              h-14
+              rounded-2xl
+              bg-cyan-100
+              flex
+              items-center
+              justify-center
+              shrink-0"
+                        >
+                            <Check size={28} className="text-cyan-700" />
+                        </div>
+
+                        <div>
+                            <h3
+                                class="text-2xl
+                font-medium
+                text-slate-900
+                mb-2"
+                            >
+                                Control Administrativo Total
+                            </h3>
+
+                            <p
+                                class="text-xl
+          text-slate-600
+          leading-relaxed
+          mb-10"
+                            >
+                                Genera automáticamente balances, estados de
+                                resultados y reportes detallados para la junta
+                                administradora y los entes de control externos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex
+            items-start
+            gap-5">
+                        <div
+                            class="w-14
+              h-14
+              rounded-2xl
+              bg-cyan-100
+              flex
+              items-center
+              justify-center
+              shrink-0"
+                        >
+                            <CircleDollarSign
+                                size={28}
+                                className="text-cyan-700"
+                            />
+                        </div>
+
+                        <div>
+                            <h3
+                                class="text-2xl
+                font-medium
+                text-slate-900
+                mb-2"
+                            >
+                                Flujo de Caja y Tesorería
+                            </h3>
+                            <p
+                                class="text-xl
+          text-slate-600
+          leading-relaxed
+          mb-10"
+                            >
+                                Agiliza el registro de ingresos y egresos
+                                diarios. Controla el movimiento de efectivo en
+                                tiempo real y automatiza la conciliación de
+                                cuentas bancarias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

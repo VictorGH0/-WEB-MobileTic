@@ -1,0 +1,17 @@
+---
+import Layout from "../../pages/Layout.astro";
+import Hero from "../../components/Hero.jsx";
+import Navbar from "../../components/Navbar.jsx";
+import Services from "../../components/Services.jsx";
+import Footer from "../../components/Footer.astro";
+---
+
+<Layout>
+    <Navbar client:visible />
+
+    <Hero />
+
+    <Services client:visible />
+
+    <Footer />
+</Layout>
